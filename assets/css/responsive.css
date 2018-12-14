@@ -37,6 +37,9 @@
     .one {
         width: 88vw !important;
     }
+    .two{
+        width: 46vh !important;
+    }
     h2 {
         font-size: 16px;
     }
@@ -45,6 +48,9 @@
     }
     .full0img img{
         height: 140px;
+    }
+    .c-divider{
+        width: calc(50vw + 60px) !important;
     }
 
 }
