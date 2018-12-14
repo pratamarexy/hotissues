@@ -37,14 +37,14 @@
     .one {
         width: 88vw !important;
     }
-    .full0img {
-        width: 63%;
-    }
     h2 {
         font-size: 16px;
     }
     ul.list-cs li {
         font-size: 13px;
+    }
+    .full0img img{
+        height: 140px;
     }
 
 }

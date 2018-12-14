@@ -105,8 +105,11 @@ body{
 }
 
 .two {
-  background-color: transparent;
-  width: 46vh !important;
+  background-color: #006CB1;
+  width: 36vh !important;
+}
+.four{
+    background-color: #fff;
 }
 
 
@@ -204,6 +207,10 @@ body{
 ul.list-cs {
     padding-left: 15px;
     margin-top: -1px;
+    font-family: 'Futura PT';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20x;
 }
 
 
@@ -291,3 +298,25 @@ ul.list-cs li:last-child:before {
 .modal-body{
     padding: 5rem 10rem;
 }    
+.c-divider {
+    width: calc(15vw + 60px) !important;
+    
+}
+.c-divider span{
+    font-family: "Funkturm";
+    color: #006CB1;
+}
+.c-divider__arrows:before {
+    background-image: linear-gradient(45deg, #fff 25%, #006CB1 25%, #006CB1 50%, #fff 50%, #fff 75%, #006CB1 75%, #006CB1) !Important;
+    
+}
+.c-divider__arrows:after {
+   
+    background-image: linear-gradient(45deg, #fff 25%, #006CB1 25%, #006CB1 50%, #fff 50%, #fff 75%, #006CB1 75%, #006CB1) !Important;
+}
+.box h2{
+    font-family: "Funkturm";
+    font-size: 24px;
+    margin-bottom: 25px;
+
+}
