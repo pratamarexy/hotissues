@@ -2,12 +2,11 @@
 
 @font-face {
     font-family: 'Futura PT';
-    src: url('../fonts/FuturaPT-Light.eot');
-    src: url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FuturaPT-Light.woff2') format('woff2'),
-        url('../fonts/FuturaPT-Light.woff') format('woff'),
-        url('../fonts/FuturaPT-Light.ttf') format('truetype');
-    font-weight: 300;
+    src: url('../fonts/FuturaPT-Medium.eot');
+    src: url('../fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Medium.woff') format('woff'),
+        url('../fonts/FuturaPT-Medium.ttf') format('truetype');
     font-style: normal;
 }
 
@@ -81,6 +80,7 @@ body{
   bottom: 0;
   right: 0;
   white-space: normal;
+  padding: 50px;
 }
 
 #container {
@@ -106,7 +106,7 @@ body{
 
 .two {
   background-color: #006CB1;
-  width: 36vh !important;
+  width: calc(15vw + 60px) !important;
 }
 .four{
     background-color: #fff;
@@ -142,7 +142,10 @@ body{
 .text-blue{
     color: #006cb1 !important;
 }
-
+.text-blue .info-text a:hover{
+    color: #006CB1;
+    opacity: 0.6;
+}
 .fenomena {
     width: 260px;
 }
@@ -208,7 +211,6 @@ ul.list-cs {
     padding-left: 15px;
     margin-top: -1px;
     font-family: 'Futura PT';
-    font-weight: 300;
     font-style: normal;
     font-size: 20x;
 }
@@ -225,6 +227,15 @@ ul.list-cs li {
     background: url('../img/misc/list-bullet-darkgray.png') no-repeat;
 }
 
+ul.list-cs li a{
+    font-family: 'Funkturm';
+    letter-spacing: normal;
+    text-decoration: underline;
+}
+ul.list-cs li a:hover{
+    color: #006CB1;
+    opacity: 0.6;
+}
 ul.list-cs li:after {
     content: url('../../img/elipse.png');
     position: absolute;
@@ -287,7 +298,7 @@ ul.list-cs li:last-child:before {
 .modal-full .modal-content {
     min-height: 100vh;
     border-radius: 0;
-    background-color: rgba(255,255,255,.93);
+    background-color: rgba(255,255,255,.96);
 }
 
 .close{
@@ -300,7 +311,7 @@ ul.list-cs li:last-child:before {
 }    
 .c-divider {
     width: calc(15vw + 60px) !important;
-    
+    z-index: 9; 
 }
 .c-divider span{
     font-family: "Funkturm";
@@ -308,15 +319,88 @@ ul.list-cs li:last-child:before {
 }
 .c-divider__arrows:before {
     background-image: linear-gradient(45deg, #fff 25%, #006CB1 25%, #006CB1 50%, #fff 50%, #fff 75%, #006CB1 75%, #006CB1) !Important;
-    
+   
 }
 .c-divider__arrows:after {
-   
     background-image: linear-gradient(45deg, #fff 25%, #006CB1 25%, #006CB1 50%, #fff 50%, #fff 75%, #006CB1 75%, #006CB1) !Important;
 }
-.box h2{
-    font-family: "Funkturm";
-    font-size: 24px;
-    margin-bottom: 25px;
 
+.info-element{
+    width: 78%;
+}
+.info-text{
+    margin-top: 35px;
+}
+.info-text a{
+    display: inline-flex;
+    font-family: "Futura PT";
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+.info-text .list-cs{
+    font-size: 18px;
+    color: #006cb1;
+}
+.info-text .list-cs li{
+    padding-bottom: 12px;
+    padding-left: 10px;
+}
+.info-text a:hover{
+    color: #fff;
+    opacity: 0.6;
+}
+.info-text h2{
+    font-family: "Funkturm"; 
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+.content .centered-v{
+    padding: 50px;
+}
+
+
+img.arrow {
+    -webkit-animation: mover 0.7s infinite  alternate;
+    animation: mover 0.7s infinite  alternate;
+    padding-left: 25px;
+    width: 48px;
+    height: 24px;
+}
+img.animated {
+    -webkit-animation: moverTop 1s infinite  alternate;
+    animation: moverTop 1s infinite  alternate;
+}
+@-webkit-keyframes moverTop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+@keyframes moverTop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+@-webkit-keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+}
+
+button.close{
+    font-size: 40px;
+    top: 35px;
+    right: 35px;
+    z-index: 999;
+}
+
+.ilustrasi{
+    width: 85%;
+}
+
+.modal .info-text h2{
+    margin-bottom: 18px;
+    color: #006CB1;
 }
