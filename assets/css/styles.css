@@ -1,0 +1,293 @@
+@import url('font-awesome.min.css');
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Light.eot');
+    src: url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Light.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Light.woff') format('woff'),
+        url('../fonts/FuturaPT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/FuturaPT-Bold.eot');
+    src: url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Bold.woff') format('woff'),
+        url('../fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Funkturm';
+    src: url('../fonts/Funkturm.eot');
+    src: url('../fonts/Funkturm.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Funkturm.woff') format('woff'),
+        url('../fonts/Funkturm.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.font-second{
+    font-family: "Funkturm";
+}
+
+
+h1, h2, h3{
+    font-family: "Funkturm";
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+.link-blue{
+    color: #006CB1 !important;
+}
+
+.text-30{
+    font-size: 30px;
+}
+
+
+body{
+    font-family: 'Futura PT';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 22px;
+}
+
+#container .box {
+  width:100vw;
+  height:100vh;
+  display:inline-block;
+  position:relative;
+}
+#container .box > .content {
+  font-size:18px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: normal;
+}
+
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+}
+
+.one {
+  background-color: #439bd3;
+  width: 95vw !important;
+}
+
+.two {
+  background-color: transparent;
+  width: 46vh !important;
+}
+
+
+.content .img-scroll{
+    height: 100vh;
+}
+
+
+.three {
+  background-color: #006CB1;
+}
+
+
+.centered-v {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+}
+
+.w-50{
+    width: 50vw !important;
+}
+
+.link-blue{
+    color: #006CB1;
+}
+
+.text-blue{
+    color: #006cb1 !important;
+}
+
+.fenomena {
+    width: 260px;
+}
+
+.fenomena-s {
+    width: 307px;
+}
+
+.text-blue{
+    color: #006CB1;
+}
+
+.fenomena{
+    width: 243px;
+}
+
+.fenomena-s{
+    width: 355px;
+}
+
+.mapsa{
+    width: 355px;
+}
+
+.haj{
+    width: 263px;
+}
+
+.kpu{
+    width: 209px;
+}
+
+.dukabola{
+    width: 197px;
+}
+
+.ratna{
+    width: 257px;
+}
+
+.thx{
+    font-size: 40px;
+}
+
+.bg-arrow{
+    background: url('../../img/arrow.png') no-repeat center center;
+    background-size: cover;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url("../../img/klik.png");
+    right: 0;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    height: 100%;
+    width: 46px;
+    margin-top: 0;
+}
+
+ul.list-cs {
+    padding-left: 15px;
+    margin-top: -1px;
+}
+
+
+ul.list-cs li {
+    position:relative;
+    margin-bottom: 0;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    list-style: none;
+    background: url('../img/misc/list-bullet-darkgray.png') no-repeat;
+}
+
+ul.list-cs li:after {
+    content: url('../../img/elipse.png');
+    position: absolute;
+    left: -15px;
+    top: 0px;
+}
+
+ul.list-cs.blue li:after {
+    content: url('../../img/elipse-blue.png');
+    position: absolute;
+    left: -15px;
+    top: 0px;
+}
+
+ul.list-cs li:before {
+    content:"";
+    position: absolute;
+    left: -11px;
+    border-left: 2px solid #fff;
+    height: 100%;
+    width: 1px;
+    top: 15px
+}
+
+ul.list-cs.blue li:before {
+    content:"";
+    position: absolute;
+    left: -11px;
+    border-left: 2px solid #006CB1;
+    height: 100%;
+    width: 1px;
+    top: 15px
+}
+
+ul.list-cs li:first-child:before {
+   top: 15px
+}
+
+ul.list-cs li:last-child:before {
+   height: 4px;
+}
+
+.mobile-swipe{
+    display: none;
+}
+
+.centered-v{
+    position: absolute;
+    top:50%;
+    left: 0%;
+    transform:translate(0%, -50%);
+    -webkit-transform:translate(0%, -50%);
+}
+
+.modal-full {
+    min-width: 100%;
+    margin: 0;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+    border-radius: 0;
+    background-color: rgba(255,255,255,.93);
+}
+
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.modal-body{
+    padding: 5rem 10rem;
+}    
