@@ -104,6 +104,17 @@ body{
   background-color: #439bd3;
   width: 95vw !important;
 }
+.one.last{
+    background-color: #006cb7;
+}
+.last .info-text h4{
+    font-family: 'Funkturm';
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
 
 .two {
   background-color: #006CB1;
