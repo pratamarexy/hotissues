@@ -341,7 +341,10 @@ ul.list-cs li:last-child:before {
 }
 
 .info-element{
-    width: 78%;
+    width: 100%;
+}
+.info-element img{
+    width: 400px;
 }
 .info-text{
     margin-top: 35px;
@@ -412,7 +415,13 @@ button.close{
 }
 
 .ilustrasi{
-    width: 85%;
+    margin-top: 15%;
+}
+.ilustrasi img{
+    width: 80%;
+}
+.modal .info-text{
+    margin-top: 50px;
 }
 
 .modal .info-text h2{
