@@ -239,6 +239,18 @@ ul.list-cs li {
     background: url('../img/misc/list-bullet-darkgray.png') no-repeat;
 }
 
+ul.list-cs li ol{
+    margin-top: 10px;
+}
+
+ul.list-cs li ol li{
+    list-style-type: decimal;
+    margin-left: 19px;
+    padding-bottom: 5px !important;
+}
+ul.list-cs li ol li:after, ul.list-cs li ol li:before{
+    display: none;
+}
 ul.list-cs li a{
     font-family: 'Funkturm';
     letter-spacing: normal;
